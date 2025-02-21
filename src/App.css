@@ -39,13 +39,6 @@ body {
 .login-btn:hover {
   transform: scale(1.1);
 }
-.login-btn:focus{
-  background-color: #ece5da;
-  color: rgb(0, 0, 0);
-  padding: 5px 15px;
-  border: 1px solid #b3a396;
-  
-}
 
 .hero,
 .info,
@@ -86,20 +79,16 @@ body {
 }
 
 .image-hero {
-  min-width: 300px;
   background-image: url("https://psicoterapiavitoria.com/wp-content/uploads/2023/04/crecimiento-personal-3.jpg"); /* Añade la ruta a tu imagen */
   background-size: cover; /* Para que la imagen cubra todo el espacio del div */
   background-position: center; /* Centra la imagen en el div */
   height: 300px; /* Altura de la imagen, ajusta según sea necesario */
   width: 300px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.5s ease;
+  
   
 }
-.image-hero:hover{
-  scale: calc(1.1);
-  transform: rotate(5deg)
-}
+
 .cta {
   background-color: #6b705c;
   color: white;
@@ -111,18 +100,7 @@ body {
 .cta:hover {
   transform: scale(1.1);
 }
-.cta:focus{
-  background-color: #d3b8a2;
-  color: rgb(0, 0, 0);
-  padding: 5px 15px;
-  border: 1px solid #b3a396;
-}
-.cta-info:focus{
-  background-color: #ece5da;
-  color: rgb(0, 0, 0);
-  padding: 5px 15px;
-  border: 1px solid #b3a396;
-}
+
 .info{
   background-color: #d3b8a2;
 }
@@ -135,7 +113,6 @@ body {
   align-content: center;
 }
 .image-help{
-  min-width: 300px;
   background-image: url("https://th.bing.com/th/id/OIP.qlyAA6A1WYS8-ni2Zd5L8AHaFn?w=600&h=455&rs=1&pid=ImgDetMain.jpg"); /* Añade la ruta a tu imagen */
   background-size: cover; /* Para que la imagen cubra todo el espacio del div */
   background-position: center; /* Centra la imagen en el div */
@@ -143,11 +120,6 @@ body {
   width: 300px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.5s ease;
-}
-
-.image-help:hover{
-  scale: calc(1.1);
-  transform: rotate(-5deg)
 }
 
 .help-container{
@@ -174,17 +146,18 @@ body {
   width: 70%;
 }
 
-.services-container{
+.services-container {
   text-align: center;
   margin-bottom: 5rem;
-  
 }
 
 .services .service-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
+
 .card {
   background-color: #d3b8a2;
   padding: 20px;
@@ -196,35 +169,50 @@ body {
   max-width: 300px;
   text-align: left;
 }
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-.cta-services:focus{
+
+.cta-services {
+  background-color: #6b705c;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cta-services:hover {
+  transform: scale(1.1);
+}
+
+.cta-services:focus {
   background-color: #ece5da;
   color: rgb(0, 0, 0);
   padding: 5px 15px;
   border: 1px solid #b3a396;
 }
 
-.image-card{
-  background-size: cover; 
-  background-position: center; 
-  height: 300px; 
-  width: 300px;
+.image-card {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
-.url-1{
+.url-1 {
   background-image: url("https://th.bing.com/th/id/OIP.gi10YBriGHRyvTkzYzbAYwHaGO?rs=1&pid=ImgDetMain.jpg");
 }
 
-.url-2{
+.url-2 {
   background-image: url("https://iworld.com.mx/wp-content/uploads/2021/01/iWOudVkrnx5Xm6kqYZWC4Ts9EEgm8mk5LanRKAkp.jpg");
 }
 
-.url-3{
+.url-3 {
   background-image: url("https://www.vanguardia.com/binrepository/716x477/0c0/0d0/none/12204/VMHF/web_ceo-time1-cop_big_tp_VL376311_MG19669280.jpg");
-
 }
 
 hr {
@@ -234,18 +222,50 @@ hr {
 }
 
 @media (max-width: 768px) {
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
   .hero,
   .info,
   .help,
   .services {
     flex-direction: column;
     text-align: center;
-    padding: 30px;
+    
+    
+  }
+  .menu-bar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .menu-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .login-btn {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
   }
   .content-container{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
   }
   .content{
     margin-bottom: 1rem;    
@@ -253,20 +273,57 @@ hr {
   .hero-text {
     width: 100%;
   }
-  .content-help{
-    margin-left: 0;
+  .help-container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
     text-align: center;
   }
-  .help-text{
-    width: 100%;
+  .image-hero {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1; /* Mantiene proporciones cuadradas */
   }
-  .help-container{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+  .image-help {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1; /* Mantiene proporciones cuadradas */
   }
+
+  .help-text {
+    width: 90%;
+  }
+
   .service-cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .card {
+    width: 60%;
+    max-width: 350px;
+  }
+
+  .image-card {
+    height: 250px;
+  }
+  .imagine-help{
+    height: 150px;
+    width: 150px;
+  }
+  .imagine-hero{
+    height: 50%;
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-card {
+    height: 200px;
+  }
+
+  .card {
+    padding: 15px;
   }
 }
