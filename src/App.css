@@ -1,0 +1,272 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.menu-bar {
+  background-color: #d3b8a2;
+  display: flex;
+  
+  align-items: center;
+  padding: 10px 20px;
+}
+.menu-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  width: 100%;
+}
+.menu-links {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+.menu-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.login-btn {
+  background-color: #6b705c;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-left: 1rem;
+}
+.login-btn:hover {
+  transform: scale(1.1);
+}
+.login-btn:focus{
+  background-color: #ece5da;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+  border: 1px solid #b3a396;
+  
+}
+
+.hero,
+.info,
+.help,
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #ece5da;  
+}
+.hero-title{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-text{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 10px;
+  width: 65%;
+}
+.content-container {
+  display: flex;
+  flex-direction: row; /* Cambia la dirección de flex a columna */
+  flex: 1;
+  align-items: center;
+  min-width: 300px;
+  max-width: 1000px;
+  height: 20rem;
+}
+
+.content {
+  flex: 1;
+  width: 10rem;
+}
+
+.image-hero {
+  min-width: 300px;
+  background-image: url("https://psicoterapiavitoria.com/wp-content/uploads/2023/04/crecimiento-personal-3.jpg"); /* Añade la ruta a tu imagen */
+  background-size: cover; /* Para que la imagen cubra todo el espacio del div */
+  background-position: center; /* Centra la imagen en el div */
+  height: 300px; /* Altura de la imagen, ajusta según sea necesario */
+  width: 300px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease;
+  
+}
+.image-hero:hover{
+  scale: calc(1.1);
+  transform: rotate(5deg)
+}
+.cta {
+  background-color: #6b705c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.cta:hover {
+  transform: scale(1.1);
+}
+.cta:focus{
+  background-color: #d3b8a2;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+  border: 1px solid #b3a396;
+}
+.cta-info:focus{
+  background-color: #ece5da;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+  border: 1px solid #b3a396;
+}
+.info{
+  background-color: #d3b8a2;
+}
+.info-container {
+  text-align: center;
+  
+}
+.info-text{
+  max-width: 700px;
+  align-content: center;
+}
+.image-help{
+  min-width: 300px;
+  background-image: url("https://th.bing.com/th/id/OIP.qlyAA6A1WYS8-ni2Zd5L8AHaFn?w=600&h=455&rs=1&pid=ImgDetMain.jpg"); /* Añade la ruta a tu imagen */
+  background-size: cover; /* Para que la imagen cubra todo el espacio del div */
+  background-position: center; /* Centra la imagen en el div */
+  height: 300px; /* Altura de la imagen, ajusta según sea necesario */
+  width: 300px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease;
+}
+
+.image-help:hover{
+  scale: calc(1.1);
+  transform: rotate(-5deg)
+}
+
+.help-container{
+  display: flex;
+  flex-direction: row; /* Cambia la dirección de flex a columna */
+  flex: 1;
+  align-items: center;
+  min-width: 300px;
+  max-width: 900px;
+  height: 20rem;
+}
+
+.content-help{
+  margin-left: auto;
+}
+
+.help-text{
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+}
+
+.services-container{
+  text-align: center;
+  margin-bottom: 5rem;
+  
+}
+
+.services .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  background-color: #d3b8a2;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: left;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.cta-services:focus{
+  background-color: #ece5da;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+  border: 1px solid #b3a396;
+}
+
+.image-card{
+  background-size: cover; 
+  background-position: center; 
+  height: 300px; 
+  width: 300px;
+}
+
+.url-1{
+  background-image: url("https://th.bing.com/th/id/OIP.gi10YBriGHRyvTkzYzbAYwHaGO?rs=1&pid=ImgDetMain.jpg");
+}
+
+.url-2{
+  background-image: url("https://iworld.com.mx/wp-content/uploads/2021/01/iWOudVkrnx5Xm6kqYZWC4Ts9EEgm8mk5LanRKAkp.jpg");
+}
+
+.url-3{
+  background-image: url("https://www.vanguardia.com/binrepository/716x477/0c0/0d0/none/12204/VMHF/web_ceo-time1-cop_big_tp_VL376311_MG19669280.jpg");
+
+}
+
+hr {
+  height: 3px;
+  background: #d3b8a2;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .info,
+  .help,
+  .services {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+  .content-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .content{
+    margin-bottom: 1rem;    
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .content-help{
+    margin-left: 0;
+    text-align: center;
+  }
+  .help-text{
+    width: 100%;
+  }
+  .help-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
